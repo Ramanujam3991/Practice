@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title> Weather Report</title>
+    </head>
+    <body>
+        <h1> Add Weather</h1>
+        <section>
+            <form action = "/add/weather" method = "POST">
+                <tr><td>Enter City :</td></tr> <input type ="text" name = "city" id = "city" />
+                <tr><td>Enter Longitude : </td></tr><input type  ="text" name = "lon" id = "longitude" />
+                <tr><td>Enter Latitude :</td></tr> <input type  ="text" name = "lat" id = "latitude" />
+                <tr><td>Enter state :</td></tr> <input type = "text" name = "state" id = "state" />
+                <tr><td>Enter Country :</td></tr> <input type = "text" name = "country" id = "country" />
+                <tr><td>Enter Weather : </td></tr><input type  ="text" name = "weather" id = "weather" />
+                <tr><td>Enter Temperature : </td></tr><input type = "text" name = "temp" id = "temperature" />
+                <tr><td>Enter Humidity :</td></tr> <input type  ="text" name = "humidity" id = "humidity" />
+                <tr><td>Enter Wind Speed : </td></tr><input type  ="text" name = "wspeed" id = "windspeed" />
+                <tr><td>Enter Direction : </td></tr><input type  ="text" name = "dir" id = "direction" />                
+                <tr><td><input type = "submit" value = "Add Weather" /></td></tr>
+            </form>
+        </section>
+        <h1> Get Weather</h1>
+        <section>
+            <form action = "/search/weather" method = "GET">
+                Enter City : <input type ="text" name = "city" id = "city" />
+                <input type = "submit" value = "Get Weather" />
+            </form>
+        </section>
+        <h1> Update Weather</h1>
+        <section>
+            <form action = "/edit/weather?_method=PUT" method = "POST">
+                <input type = "submit" value = "Update Weather" />
+            </form>
+        </section>
+    </body>
+</html>
